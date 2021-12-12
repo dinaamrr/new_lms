@@ -6,9 +6,8 @@ $query = "SELECT * FROM questions";
 $run = mysqli_query($conn , $query) or die(mysqli_error($conn));
 $total = mysqli_num_rows($run);
 $queryt = "SELECT timer FROM questions" ;
-			$runt = mysqli_query($conn , $queryt) or die(mysqli_error($conn));
-			
-			$rowt = mysqli_fetch_row($runt);
+$runt = mysqli_query($conn , $queryt) or die(mysqli_error($conn));			
+$rowt = mysqli_fetch_row($runt);
 ?>
 
 <html>
